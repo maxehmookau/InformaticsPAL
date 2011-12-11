@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50025A3C1492960F00758A19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50025A3B1492960F00758A19 /* UIKit.framework */; };
+		50025A3E1492960F00758A19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50025A3D1492960F00758A19 /* Foundation.framework */; };
+		50025A401492960F00758A19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50025A3F1492960F00758A19 /* CoreGraphics.framework */; };
+		50025A461492960F00758A19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50025A441492960F00758A19 /* InfoPlist.strings */; };
+		50025A481492960F00758A19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50025A471492960F00758A19 /* main.m */; };
+		50025A4C1492960F00758A19 /* InformaticsPALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50025A4B1492960F00758A19 /* InformaticsPALAppDelegate.m */; };
+		50025A5F1492970000758A19 /* ProfilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50025A5D1492970000758A19 /* ProfilesViewController.m */; };
+		50025A601492970000758A19 /* ProfilesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50025A5E1492970000758A19 /* ProfilesViewController.xib */; };
+		50025A641492975A00758A19 /* TimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50025A621492975A00758A19 /* TimetableViewController.m */; };
+		50025A651492975A00758A19 /* TimetableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50025A631492975A00758A19 /* TimetableViewController.xib */; };
+		50025A691492981D00758A19 /* group.png in Resources */ = {isa = PBXBuildFile; fileRef = 50025A671492981D00758A19 /* group.png */; };
+		50025A6A1492981D00758A19 /* group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50025A681492981D00758A19 /* group@2x.png */; };
+		50025A6D1492982C00758A19 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 50025A6B1492982C00758A19 /* calendar.png */; };
+		50025A6E1492982C00758A19 /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50025A6C1492982C00758A19 /* calendar@2x.png */; };
+		504750941493F8BC00DDE634 /* Profiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504750931493F8BC00DDE634 /* Profiles.plist */; };
+		5047509A1493FAC200DDE634 /* edd.png in Resources */ = {isa = PBXBuildFile; fileRef = 504750961493FAC200DDE634 /* edd.png */; };
+		5047509B1493FAC200DDE634 /* edd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 504750971493FAC200DDE634 /* edd@2x.png */; };
+		5047509C1493FAC200DDE634 /* max.png in Resources */ = {isa = PBXBuildFile; fileRef = 504750981493FAC200DDE634 /* max.png */; };
+		5047509D1493FAC200DDE634 /* max@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 504750991493FAC200DDE634 /* max@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50025A371492960F00758A19 /* InformaticsPAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InformaticsPAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50025A3B1492960F00758A19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		50025A3D1492960F00758A19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		50025A3F1492960F00758A19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		50025A431492960F00758A19 /* InformaticsPAL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InformaticsPAL-Info.plist"; sourceTree = "<group>"; };
+		50025A451492960F00758A19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50025A471492960F00758A19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50025A491492960F00758A19 /* InformaticsPAL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InformaticsPAL-Prefix.pch"; sourceTree = "<group>"; };
+		50025A4A1492960F00758A19 /* InformaticsPALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InformaticsPALAppDelegate.h; sourceTree = "<group>"; };
+		50025A4B1492960F00758A19 /* InformaticsPALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InformaticsPALAppDelegate.m; sourceTree = "<group>"; };
+		50025A5C1492970000758A19 /* ProfilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilesViewController.h; sourceTree = "<group>"; };
+		50025A5D1492970000758A19 /* ProfilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilesViewController.m; sourceTree = "<group>"; };
+		50025A5E1492970000758A19 /* ProfilesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilesViewController.xib; sourceTree = "<group>"; };
+		50025A611492975A00758A19 /* TimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimetableViewController.h; sourceTree = "<group>"; };
+		50025A621492975A00758A19 /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimetableViewController.m; sourceTree = "<group>"; };
+		50025A631492975A00758A19 /* TimetableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimetableViewController.xib; sourceTree = "<group>"; };
+		50025A671492981D00758A19 /* group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group.png; sourceTree = "<group>"; };
+		50025A681492981D00758A19 /* group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group@2x.png"; sourceTree = "<group>"; };
+		50025A6B1492982C00758A19 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		50025A6C1492982C00758A19 /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
+		504750931493F8BC00DDE634 /* Profiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Profiles.plist; sourceTree = "<group>"; };
+		504750961493FAC200DDE634 /* edd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edd.png; sourceTree = "<group>"; };
+		504750971493FAC200DDE634 /* edd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edd@2x.png"; sourceTree = "<group>"; };
+		504750981493FAC200DDE634 /* max.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = max.png; sourceTree = "<group>"; };
+		504750991493FAC200DDE634 /* max@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "max@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50025A341492960F00758A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50025A3C1492960F00758A19 /* UIKit.framework in Frameworks */,
+				50025A3E1492960F00758A19 /* Foundation.framework in Frameworks */,
+				50025A401492960F00758A19 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50025A2C1492960E00758A19 = {
+			isa = PBXGroup;
+			children = (
+				50025A66149297F100758A19 /* Images */,
+				50025A411492960F00758A19 /* InformaticsPAL */,
+				50025A3A1492960F00758A19 /* Frameworks */,
+				50025A381492960F00758A19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50025A381492960F00758A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50025A371492960F00758A19 /* InformaticsPAL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50025A3A1492960F00758A19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50025A3B1492960F00758A19 /* UIKit.framework */,
+				50025A3D1492960F00758A19 /* Foundation.framework */,
+				50025A3F1492960F00758A19 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50025A411492960F00758A19 /* InformaticsPAL */ = {
+			isa = PBXGroup;
+			children = (
+				50025A611492975A00758A19 /* TimetableViewController.h */,
+				50025A621492975A00758A19 /* TimetableViewController.m */,
+				50025A631492975A00758A19 /* TimetableViewController.xib */,
+				504750911493F8A600DDE634 /* Profiles */,
+				50025A4A1492960F00758A19 /* InformaticsPALAppDelegate.h */,
+				50025A4B1492960F00758A19 /* InformaticsPALAppDelegate.m */,
+				50025A421492960F00758A19 /* Supporting Files */,
+			);
+			path = InformaticsPAL;
+			sourceTree = "<group>";
+		};
+		50025A421492960F00758A19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50025A431492960F00758A19 /* InformaticsPAL-Info.plist */,
+				50025A441492960F00758A19 /* InfoPlist.strings */,
+				50025A471492960F00758A19 /* main.m */,
+				50025A491492960F00758A19 /* InformaticsPAL-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50025A66149297F100758A19 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				504750951493FAA400DDE634 /* Leaders */,
+				50025A6B1492982C00758A19 /* calendar.png */,
+				50025A6C1492982C00758A19 /* calendar@2x.png */,
+				50025A671492981D00758A19 /* group.png */,
+				50025A681492981D00758A19 /* group@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		504750911493F8A600DDE634 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				50025A5C1492970000758A19 /* ProfilesViewController.h */,
+				50025A5D1492970000758A19 /* ProfilesViewController.m */,
+				50025A5E1492970000758A19 /* ProfilesViewController.xib */,
+				504750931493F8BC00DDE634 /* Profiles.plist */,
+			);
+			name = Profiles;
+			sourceTree = "<group>";
+		};
+		504750951493FAA400DDE634 /* Leaders */ = {
+			isa = PBXGroup;
+			children = (
+				504750961493FAC200DDE634 /* edd.png */,
+				504750971493FAC200DDE634 /* edd@2x.png */,
+				504750981493FAC200DDE634 /* max.png */,
+				504750991493FAC200DDE634 /* max@2x.png */,
+			);
+			name = Leaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50025A361492960F00758A19 /* InformaticsPAL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50025A551492960F00758A19 /* Build configuration list for PBXNativeTarget "InformaticsPAL" */;
+			buildPhases = (
+				50025A331492960F00758A19 /* Sources */,
+				50025A341492960F00758A19 /* Frameworks */,
+				50025A351492960F00758A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InformaticsPAL;
+			productName = InformaticsPAL;
+			productReference = 50025A371492960F00758A19 /* InformaticsPAL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50025A2E1492960E00758A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 50025A311492960E00758A19 /* Build configuration list for PBXProject "InformaticsPAL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50025A2C1492960E00758A19;
+			productRefGroup = 50025A381492960F00758A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50025A361492960F00758A19 /* InformaticsPAL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50025A351492960F00758A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50025A461492960F00758A19 /* InfoPlist.strings in Resources */,
+				50025A601492970000758A19 /* ProfilesViewController.xib in Resources */,
+				50025A651492975A00758A19 /* TimetableViewController.xib in Resources */,
+				50025A691492981D00758A19 /* group.png in Resources */,
+				50025A6A1492981D00758A19 /* group@2x.png in Resources */,
+				50025A6D1492982C00758A19 /* calendar.png in Resources */,
+				50025A6E1492982C00758A19 /* calendar@2x.png in Resources */,
+				504750941493F8BC00DDE634 /* Profiles.plist in Resources */,
+				5047509A1493FAC200DDE634 /* edd.png in Resources */,
+				5047509B1493FAC200DDE634 /* edd@2x.png in Resources */,
+				5047509C1493FAC200DDE634 /* max.png in Resources */,
+				5047509D1493FAC200DDE634 /* max@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50025A331492960F00758A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50025A481492960F00758A19 /* main.m in Sources */,
+				50025A4C1492960F00758A19 /* InformaticsPALAppDelegate.m in Sources */,
+				50025A5F1492970000758A19 /* ProfilesViewController.m in Sources */,
+				50025A641492975A00758A19 /* TimetableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50025A441492960F00758A19 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50025A451492960F00758A19 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50025A531492960F00758A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		50025A541492960F00758A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50025A561492960F00758A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InformaticsPAL/InformaticsPAL-Prefix.pch";
+				INFOPLIST_FILE = "InformaticsPAL/InformaticsPAL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		50025A571492960F00758A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InformaticsPAL/InformaticsPAL-Prefix.pch";
+				INFOPLIST_FILE = "InformaticsPAL/InformaticsPAL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50025A311492960E00758A19 /* Build configuration list for PBXProject "InformaticsPAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50025A531492960F00758A19 /* Debug */,
+				50025A541492960F00758A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50025A551492960F00758A19 /* Build configuration list for PBXNativeTarget "InformaticsPAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50025A561492960F00758A19 /* Debug */,
+				50025A571492960F00758A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50025A2E1492960E00758A19 /* Project object */;
+}

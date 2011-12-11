@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Names</key>
+	<array>
+		<string>Max Woolf</string>
+		<string>Edd King</string>
+	</array>
+	<key>Bios</key>
+	<array>
+		<string>Max is awesome!</string>
+		<string>Edd is awesome!</string>
+	</array>
+	<key>PictureNames</key>
+	<array>
+		<string>max.png</string>
+		<string>edd.png</string>
+	</array>
+</dict>
+</plist>
