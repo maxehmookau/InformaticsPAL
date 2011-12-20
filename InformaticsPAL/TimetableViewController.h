@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TimetableViewController : UIViewController
+@interface TimetableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+{
+    NSDictionary *plistData;
+}
 
 @end

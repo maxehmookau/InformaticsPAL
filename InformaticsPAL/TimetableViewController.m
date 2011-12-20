@@ -21,6 +21,60 @@
     return self;
 }
 
+-(void)readPlist
+{
+    NSString *path = [[NSBundle mainBundle] bundlePath];
+    NSString *finalPath = [path stringByAppendingPathComponent:@"Courses.plist"];
+    plistData = [NSDictionary dictionaryWithContentsOfFile:finalPath];
+}
+
+#pragma mark - Table Delegate Methods
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if(section == 0)
+    {
+        return [[plistData objectForKey:@"FirstYear"]count];
+    }
+    return [[plistData objectForKey:@"SecondYear"]count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:SimpleTableIdentifier];  
+    [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+    
+    if(indexPath.section == 0)
+    {
+        [cell.textLabel setText:[[plistData objectForKey:@"FirstYear"]objectAtIndex:indexPath.row]];
+    }else{
+        [cell.textLabel setText:[[plistData objectForKey:@"SecondYear"]objectAtIndex:indexPath.row]];
+    }    
+    return cell;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if(section == 0)
+    {
+        return @"First Year Courses";
+    }
+    return @"Second year Courses";
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
+#pragma mark - View lifecycle
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -29,10 +83,9 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View lifecycle
-
 - (void)viewDidLoad
 {
+    [self readPlist];
     [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:0.549 green:0.824 blue:0.925 alpha:1.000]];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
