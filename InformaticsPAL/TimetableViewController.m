@@ -52,9 +52,9 @@
     
     if(indexPath.section == 0)
     {
-        [cell.textLabel setText:[[plistData objectForKey:@"FirstYear"]objectAtIndex:indexPath.row]];
+        [cell.textLabel setText:[[[plistData objectForKey:@"FirstYear"]allKeys]objectAtIndex:indexPath.row]];
     }else{
-        [cell.textLabel setText:[[plistData objectForKey:@"SecondYear"]objectAtIndex:indexPath.row]];
+        [cell.textLabel setText:[[[plistData objectForKey:@"SecondYear"]allKeys]objectAtIndex:indexPath.row]];
     }    
     return cell;
 }
@@ -65,7 +65,7 @@
     {
         return @"First Year Courses";
     }
-    return @"Second year Courses";
+    return @"Second Year Courses";
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

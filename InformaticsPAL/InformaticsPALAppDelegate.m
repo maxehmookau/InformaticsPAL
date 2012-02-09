@@ -32,6 +32,8 @@
     tabBar.viewControllers = [NSArray arrayWithObjects:profilesNC, timetableNC, nil];
     self.window.rootViewController = tabBar;
     
+    UIImage *image = [[UIImage alloc] initWithContentsOfFile:@"calendar.png"];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

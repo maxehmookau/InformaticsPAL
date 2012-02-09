@@ -7,6 +7,7 @@
 //
 
 #import "ProfilesViewController.h"
+#import "DetailedProfileViewController.h"
 
 @implementation ProfilesViewController
 
@@ -55,17 +56,24 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:SimpleTableIdentifier];    
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     cell.textLabel.text = [[plistData objectForKey:@"Names"]objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[[plistData objectForKey:@"PictureNames"]objectAtIndex:indexPath.row]];
+    cell.imageView.image = [UIImage imageNamed:[[plistData objectForKey:@"PictureNames"] objectAtIndex:indexPath.row]];
     return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    return 75;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //Generate dictionary with information
+    NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
+    [data setValue:[[plistData objectForKey:@"Names"]objectAtIndex:indexPath.row] forKey:@"Name"];
+    [data setValue:[UIImage imageNamed:[[plistData objectForKey:@"PictureNames"]objectAtIndex:indexPath.row]] forKey:@"Image"];
+    [data setValue:[[plistData objectForKey:@"Bios"]objectAtIndex:indexPath.row] forKey:@"Bio"];
+    DetailedProfileViewController *detailVC = [[DetailedProfileViewController alloc] initwithDataDictionary:data];
+    [self.navigationController pushViewController:detailVC animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

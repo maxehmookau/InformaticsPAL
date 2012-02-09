@@ -6,16 +6,46 @@
 	<array>
 		<string>Max Woolf</string>
 		<string>Edd King</string>
+		<string>Max Hastings</string>
+		<string>Chris E</string>
+		<string>Chris Lau</string>
+		<string>Daniel Lee</string>
+		<string>George MacRorie</string>
+		<string>Luke Corpe</string>
+		<string>Rob Johnson</string>
+		<string>Sam</string>
+		<string>Sean Chapman</string>
+		<string>Ollie Glass</string>
 	</array>
 	<key>Bios</key>
 	<array>
 		<string>Max is awesome!</string>
 		<string>Edd is awesome!</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
 	</array>
 	<key>PictureNames</key>
 	<array>
-		<string>max.png</string>
-		<string>edd.png</string>
+		<string>MaxW.png</string>
+		<string>Edd.png</string>
+		<string>MaxH.png</string>
+		<string>ChrisE.png</string>
+		<string>ChrisL.png</string>
+		<string>DanielL.png</string>
+		<string>GeorgeM.png</string>
+		<string>LukeC.png</string>
+		<string>RobJ.png</string>
+		<string>Sam.png</string>
+		<string>SeanC.png</string>
+		<string>OllieG.png</string>
 	</array>
 </dict>
 </plist>
