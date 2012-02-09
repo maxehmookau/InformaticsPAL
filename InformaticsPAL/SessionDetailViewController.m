@@ -7,6 +7,7 @@
 //
 
 #import "SessionDetailViewController.h"
+#import "WebViewController.h"
 #import <EventKitUI/EventKitUI.h>
 
 @implementation SessionDetailViewController
@@ -61,19 +62,23 @@
     if (indexPath.section == 0) {
         [cell.textLabel setText:@"Location"];
         [cell.detailTextLabel setText:[dataDictionary valueForKey:@"Location"]];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     }else if(indexPath.section == 1)
     {
         [cell.textLabel setText:@"Time"];
         NSString *time = [[dataDictionary valueForKey:@"Times"]objectAtIndex:indexPath.row];
         NSString *day = [[dataDictionary valueForKey:@"Days"]objectAtIndex:indexPath.row];
         [cell.detailTextLabel setText:[[day stringByAppendingString:@" "]stringByAppendingString:time]];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     }else if(indexPath.section == 2)
     {
         [cell.textLabel setText:@"Tutor"];
         [cell.detailTextLabel setText:[[dataDictionary valueForKey:@"Tutors"] objectAtIndex:indexPath.row]];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     }else if(indexPath.section == 3)
     {
         [cell.detailTextLabel setText:[dataDictionary valueForKey:@"Website"]];
+        [cell.detailTextLabel setFont:[UIFont systemFontOfSize:12.0f]];
     }
     
     return cell;
@@ -87,11 +92,12 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    EKEvent *event = [EKEvent eventWithEventStore:nil];
-    EKEventViewController *calVC = [[EKEventViewController alloc] init];
-    calVC.event = myEvent;
-    calVC.allowsEditing = YES;
-    [self presentModalViewController:calVC animated:YES];
+    if(indexPath.section == 3)
+    {
+        WebViewController *web = [[WebViewController alloc] init];
+        [web setURL:[dataDictionary valueForKey:@"Website"]];
+        [self.navigationController pushViewController:web animated:YES];
+    }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

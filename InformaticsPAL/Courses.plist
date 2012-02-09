@@ -10,21 +10,28 @@
 			<string>Chichester 1 - Lab 1</string>
 			<key>Times</key>
 			<array>
-				<string>1pm</string>
+				<string>12pm</string>
 				<string>2pm</string>
+				<string>12pm</string>
+				<string>12pm</string>
+				<string>12pm</string>
+				<string>1pm</string>
 			</array>
 			<key>Days</key>
 			<array>
 				<string>Monday</string>
+				<string>Monday</string>
+				<string>Tuesday</string>
+				<string>Wednesday</string>
 				<string>Thursday</string>
+				<string>Friday</string>
 			</array>
 			<key>Tutors</key>
 			<array>
-				<string>Edd King</string>
-				<string>Max Woolf</string>
+				<string>Everyone</string>
 			</array>
 			<key>Website</key>
-			<string>http://www.google.com</string>
+			<string>http://www.informatics.sussex.ac.uk/courses/FP/</string>
 		</dict>
 		<key>Models of Computing</key>
 		<dict>
@@ -32,21 +39,19 @@
 			<string>Chichester 1 - Lab 1</string>
 			<key>Times</key>
 			<array>
-				<string>1pm</string>
 				<string>2pm</string>
 			</array>
 			<key>Days</key>
 			<array>
-				<string>Monday</string>
-				<string>Thursday</string>
+				<string>Wednesday</string>
 			</array>
 			<key>Tutors</key>
 			<array>
+				<string>Sam</string>
 				<string>George MacRorie</string>
-				<string>Someone Else</string>
 			</array>
 			<key>Website</key>
-			<string>http://www.google.com</string>
+			<string>http://www.sussex.ac.uk/Users/davidw/courses/moc/</string>
 		</dict>
 	</dict>
 	<key>SecondYear</key>
@@ -69,7 +74,107 @@
 				<string>Max Woolf</string>
 			</array>
 			<key>Website</key>
-			<string>http://www.google.com</string>
+			<string>http://www.sussex.ac.uk/Users/davidw/courses/le/</string>
+		</dict>
+		<key>Programming for 3D</key>
+		<dict>
+			<key>Times</key>
+			<array>
+				<string>1pm</string>
+			</array>
+			<key>Days</key>
+			<array>
+				<string>Thursday</string>
+			</array>
+			<key>Location</key>
+			<string>Chichester 1 - Lab 1</string>
+			<key>Tutors</key>
+			<array>
+				<string>Max Hastings</string>
+				<string>Luke Corpe</string>
+			</array>
+			<key>Website</key>
+			<string>https://studydirect.sussex.ac.uk/course/view.php?id=14019</string>
+		</dict>
+		<key>Operating System &amp; Networks</key>
+		<dict>
+			<key>Times</key>
+			<array>
+				<string>1pm</string>
+			</array>
+			<key>Days</key>
+			<array>
+				<string>Wednesday</string>
+			</array>
+			<key>Location</key>
+			<string>Chichester 1 - Lab 1</string>
+			<key>Tutors</key>
+			<array>
+				<string>Luke Corpe</string>
+				<string>Edd King</string>
+			</array>
+			<key>Website</key>
+			<string>https://studydirect.sussex.ac.uk/course/view.php?idnumber=G6059:SP-SU11/12</string>
+		</dict>
+		<key>Software Engineering</key>
+		<dict>
+			<key>Times</key>
+			<array>
+				<string>11am</string>
+			</array>
+			<key>Days</key>
+			<array>
+				<string>Tuesday</string>
+			</array>
+			<key>Location</key>
+			<string>Chichester 1 - Lab 1</string>
+			<key>Tutors</key>
+			<array>
+				<string>Sean Chapman</string>
+				<string>Edd King</string>
+			</array>
+			<key>Website</key>
+			<string>http://www.sussex.ac.uk/Users/mfb21/se/</string>
+		</dict>
+		<key>Program Design</key>
+		<dict>
+			<key>Times</key>
+			<array>
+				<string>2pm</string>
+			</array>
+			<key>Days</key>
+			<array>
+				<string>Tuesday</string>
+			</array>
+			<key>Location</key>
+			<string>Chichester 1 - Lab 1</string>
+			<key>Tutors</key>
+			<array>
+				<string>Daniel Lee</string>
+				<string>Chris L</string>
+			</array>
+			<key>Website</key>
+			<string>https://studydirect.sussex.ac.uk/course/view.php?id=13807</string>
+		</dict>
+		<key>AIAB</key>
+		<dict>
+			<key>Times</key>
+			<array>
+				<string>3pm</string>
+			</array>
+			<key>Days</key>
+			<array>
+				<string>Thursday</string>
+			</array>
+			<key>Location</key>
+			<string>Chichester 1 - Lab 1</string>
+			<key>Tutors</key>
+			<array>
+				<string>Sean Chapman</string>
+				<string>George MacRorie</string>
+			</array>
+			<key>Website</key>
+			<string>http://www.informatics.sussex.ac.uk/courses/aiab/</string>
 		</dict>
 	</dict>
 </dict>
