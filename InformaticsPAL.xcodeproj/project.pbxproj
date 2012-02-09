@@ -31,6 +31,7 @@
 		503A8D5314E4114A009D3D18 /* SeanC.png in Resources */ = {isa = PBXBuildFile; fileRef = 503A8D4B14E4114A009D3D18 /* SeanC.png */; };
 		503A8D5814E424EE009D3D18 /* SessionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A8D5614E424EE009D3D18 /* SessionDetailViewController.m */; };
 		503A8D5914E424EE009D3D18 /* SessionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503A8D5714E424EE009D3D18 /* SessionDetailViewController.xib */; };
+		503A8D5B14E43275009D3D18 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503A8D5A14E43275009D3D18 /* EventKitUI.framework */; };
 		504750941493F8BC00DDE634 /* Profiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504750931493F8BC00DDE634 /* Profiles.plist */; };
 		50561D4114E3E93E00BAB564 /* DetailedProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50561D3F14E3E93E00BAB564 /* DetailedProfileViewController.m */; };
 		50561D4214E3E93E00BAB564 /* DetailedProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50561D4014E3E93E00BAB564 /* DetailedProfileViewController.xib */; };
@@ -69,6 +70,7 @@
 		503A8D5514E424EE009D3D18 /* SessionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionDetailViewController.h; sourceTree = "<group>"; };
 		503A8D5614E424EE009D3D18 /* SessionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionDetailViewController.m; sourceTree = "<group>"; };
 		503A8D5714E424EE009D3D18 /* SessionDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SessionDetailViewController.xib; sourceTree = "<group>"; };
+		503A8D5A14E43275009D3D18 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		504750931493F8BC00DDE634 /* Profiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Profiles.plist; sourceTree = "<group>"; };
 		50561D3E14E3E93E00BAB564 /* DetailedProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedProfileViewController.h; sourceTree = "<group>"; };
 		50561D3F14E3E93E00BAB564 /* DetailedProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedProfileViewController.m; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503A8D5B14E43275009D3D18 /* EventKitUI.framework in Frameworks */,
 				50025A3C1492960F00758A19 /* UIKit.framework in Frameworks */,
 				50025A3E1492960F00758A19 /* Foundation.framework in Frameworks */,
 				50025A401492960F00758A19 /* CoreGraphics.framework in Frameworks */,
@@ -93,6 +96,7 @@
 		50025A2C1492960E00758A19 = {
 			isa = PBXGroup;
 			children = (
+				503A8D5A14E43275009D3D18 /* EventKitUI.framework */,
 				50025A66149297F100758A19 /* Images */,
 				50025A411492960F00758A19 /* InformaticsPAL */,
 				50025A3A1492960F00758A19 /* Frameworks */,

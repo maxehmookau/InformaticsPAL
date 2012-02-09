@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SessionDetailViewController : UIViewController
+@interface SessionDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+{
+    NSDictionary *dataDictionary;
+    NSString *courseName;
+}
+
+-(id)initWithDataDictionary:(NSDictionary *)data title:(NSString *)title;
 
 @end

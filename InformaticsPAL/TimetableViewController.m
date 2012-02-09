@@ -7,6 +7,7 @@
 //
 
 #import "TimetableViewController.h"
+#import "SessionDetailViewController.h"
 
 @implementation TimetableViewController
 
@@ -70,6 +71,16 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if(indexPath.section== 0)
+    {
+        SessionDetailViewController *sessionVC = [[SessionDetailViewController alloc] initWithDataDictionary:[[plistData objectForKey:@"FirstYear"]objectForKey:[tableView cellForRowAtIndexPath:indexPath].textLabel.text] title:[tableView cellForRowAtIndexPath:indexPath].textLabel.text];
+        [self.navigationController pushViewController:sessionVC animated:YES];
+    }else{
+        SessionDetailViewController *sessionVC = [[SessionDetailViewController alloc] initWithDataDictionary:[[plistData objectForKey:@"SecondYear"]objectForKey:[tableView cellForRowAtIndexPath:indexPath].textLabel.text] title:[tableView cellForRowAtIndexPath:indexPath].textLabel.text];
+        [self.navigationController pushViewController:sessionVC animated:YES];
+    }
+    
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
