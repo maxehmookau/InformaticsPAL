@@ -10,7 +10,7 @@
 
 @class InformaticsPALViewController;
 
-@interface InformaticsPALAppDelegate : UIResponder <UIApplicationDelegate>
+@interface InformaticsPALAppDelegate : UIResponder <UIApplicationDelegate, NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

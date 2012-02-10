@@ -29,14 +29,51 @@
     [timetableVC setTitle:@"Timetable"];
     UINavigationController *timetableNC = [[UINavigationController alloc] initWithRootViewController:timetableVC];
     
-    tabBar.viewControllers = [NSArray arrayWithObjects:profilesNC, timetableNC, nil];
+    tabBar.viewControllers = [NSArray arrayWithObjects:timetableNC, profilesNC, nil];
     self.window.rootViewController = tabBar;
     
-    UIImage *image = [[UIImage alloc] initWithContentsOfFile:@"calendar.png"];
-    
+    //UIImage *image = [[UIImage alloc] initWithContentsOfFile:@"calendar.png"];
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+	NSLog(@"Failed to get token, error: %@", error);
+}
+
+- (void)application:(UIApplication*)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PAL Alert!" message:[[userInfo objectForKey:@"aps"]valueForKey:@"alert"] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [alert show];
+}
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+    NSString * token = [[[deviceToken description] 
+                         stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]] 
+                        stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *urlString = [[NSString alloc] initWithString:@"https://go.urbanairship.com/api/device_tokens/"];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[urlString stringByAppendingString:token]]];
+    [request setHTTPMethod:@"PUT"];
+    [[NSURLConnection connectionWithRequest:request delegate:self]start];
+    NSLog(@"%@", token);
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
+{
+    NSLog(@"Challenged!");
+    NSURLCredential *credential = [[NSURLCredential alloc] initWithUser:@"a7HKkMOnTMCNBR-KYRVBKA" password:@"h8nUX9KcTMCBodgwaHndsQ" persistence:NSURLCredentialPersistenceNone];
+    [[challenge sender] useCredential:credential forAuthenticationChallenge:challenge];
+}
+
+-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

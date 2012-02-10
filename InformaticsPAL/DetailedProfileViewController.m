@@ -47,6 +47,7 @@
         }else{
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"DetailCell"];
             [cell.textLabel setFont:[UIFont systemFontOfSize:14.0f]];
+            [cell.textLabel setNumberOfLines:0];
             [cell.textLabel setText:[dataDictionary valueForKey:@"Bio"]];
         }
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
@@ -55,9 +56,15 @@
     return cell;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 75;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.section ==0)
+    {
+        return 75;
+    }
+    CGSize size = [[dataDictionary valueForKey:@"Bio"]
+                   sizeWithFont:[UIFont systemFontOfSize:14]
+                   constrainedToSize:CGSizeMake(300, CGFLOAT_MAX)];
+    return size.height + 20;
 }
 
 - (void)didReceiveMemoryWarning

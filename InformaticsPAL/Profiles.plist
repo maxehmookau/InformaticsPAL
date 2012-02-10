@@ -13,24 +13,24 @@
 		<string>George MacRorie</string>
 		<string>Luke Corpe</string>
 		<string>Rob Johnson</string>
-		<string>Sam</string>
+		<string>Sam Richards</string>
 		<string>Sean Chapman</string>
 		<string>Ollie Glass</string>
 	</array>
 	<key>Bios</key>
 	<array>
-		<string>Max is awesome!</string>
-		<string>Edd is awesome!</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>My name is Max and I&apos;m a third year studying Music Informatics. I&apos;ll be running sessions for both Further Programming and Computer Music. I spent most of my time in front of a screen of some sort and love to code! My interests lie mainly in computer music and mobile application development! Feel free to ask me any questions you might have and I&apos;ll do what I can!</string>
+		<string>Hi, I&apos;m Edd a third year studying Computer Science and this is my second year in PAL. Theres no such thing as a silly question, ask me anything! In my spare time I run the rollerblading society, help out with hackUS and watch too many movies for my own good. If you see me, come and say hi!</string>
+		<string>Hi my name is Max. I&apos;m studying Multimeida and Digital Systems. When I’m able get off the computer I enjoy playing football, bmxing and of course listening to music. I will be doing Java and Programming for 3d sessions this term/year. I’m around campus a lot so if you see me around don’t hesitate to say something.</string>
+		<string>Buongiorno, My name is Chris and I am currently studying in my second year of the Games &amp; Multimedia Environments course in informatics. If I am not sitting in the labs staring aimlessly at pages and pages of Java code, then you&apos;ll find me on Xbox live, PSN or somewhere in Brighton when the sun goes down. I will be taking PAL sessions in Java as all that staring does eventually pay off when it comes to practice! If you see me knocking about the labs, don&apos;t hesitate to give me a wave or ask for some help if in need.</string>
+		<string>Hey, my name&apos;s Chris, and I&apos;m currently in my second year of Computer Science. When I&apos;m not doing work, I love to listen and play music, or enjoy a good night out. Don&apos;t be afraid to approach me with any questions you may have about Java or any of the other courses in the degree. I know what it&apos;s like struggling with this stuff too!</string>
+		<string>Hi I&apos;m Daniel, a second year Computer Science student. I am also the student representative for the second year and help run the HackUs society. I will help run the Java session this year. In my spare time I enjoy biking, listening to music and watching television. I&apos;m always happy to help and answer questions, so don&apos;t hesitate to ask.</string>
+		<string>My name is George MacRorie. I am studying CAI in my third year. I&apos;m currently developing my third year project. The project is an attempt to identify morphological anomalies in images of cells from cervical screenings. This is done using Computer Vision feature extraction, coupled with a neural network approach to machine learning. The project is aimed at finding the best neural net approach to model the implicit structure of the morphology data I extract. Outside of uni I&apos;m interested in music and hanging out with my mates and my girlfriend.</string>
+		<string>I&apos;m Luke currently in my third year, studying Games and Multimedia Environments. I also have a foundation degree in Electronical and Electronic Engineering, which has helped me understand the more nitty gritty stuff that you find in modules like Introduction to computer systems. Outside the academic would I develop indie games and for my third year project I&apos;m planning to make a game to eventually release on the Xbox marketplace. Feel free to approach me outside of the Java PAL sessions and I’ll see if I can lend you a quick hand.</string>
+		<string>I&apos;m Rob, 19, and a second year Informatics student in Computer Science. I&apos;ll try my best to help you out with any problem you have, so dont hesitate to give me a shout if you see me around campus or in the labs at all.</string>
+		<string>I&apos;m Sam Richards and I am a second year computer scientist, who is willing to help with any queries you might have over the year related to the course.If you also have any other general questions about the university i&apos;ll be happy to help. In my spare time I enjoy socialising, playing video games and sports.</string>
+		<string>Hello, My Name is Sean and I am in my third year doing the computer science strand of computing and artificial intelligence, computing has always been a keen interest of mine so its good to be able to study it at Sussex. Away from uni I enjoy several hobbies, a couple of them are Scouting (I&apos;m a Scout Leader), gaming on pc and Xbox, listening to rock and going to rock clubs (when money allows =D). In the autumn term I will be doing Java sessions and hopefully more in the following terms. I usually lurk about the labs in Chichester when I&apos;m not in class so if you see me don&apos;t hesitate to come say hi, I&apos;ll do my best to help =D.</string>
+		<string>I manage PAL here in the Informatics department. I hire, train and supervise the team, and oversee the program. Sometimes I run Intensive Java sessions. You&apos;ll hear from me throughout the year, but if you&apos;ve any questions about PAL or you&apos;re interested in joining, feel free to get in touch.</string>
 	</array>
 	<key>PictureNames</key>
 	<array>
