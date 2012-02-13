@@ -32,6 +32,7 @@
     
     tabBar.viewControllers = [NSArray arrayWithObjects:timetableNC, profilesNC, nil];
     self.window.rootViewController = tabBar;
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
      (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
     [self.window makeKeyAndVisible];

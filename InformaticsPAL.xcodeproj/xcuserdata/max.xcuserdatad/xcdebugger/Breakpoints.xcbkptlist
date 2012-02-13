@@ -9,11 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InformaticsPAL/InformaticsPALAppDelegate.m"
-         timestampString = "350594728.605948"
+         timestampString = "350835726.095947"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "45"
-         endingLineNumber = "45"
+         startingLineNumber = "46"
+         endingLineNumber = "46"
          landmarkName = "@implementation InformaticsPALAppDelegate"
          landmarkType = "3">
       </FileBreakpoint>
