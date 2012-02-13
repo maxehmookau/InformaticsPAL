@@ -42,19 +42,6 @@
 #pragma mark - Web View Delegate Methods
 //These are VERY buggy. Maybe implement in another version
 
-//- (void)webViewDidStartLoad:(UIWebView *)webView
-//{
-//    NSLog(@"Started Loading");
-//    progIn = [[ProgressIndicator alloc] init];
-//    [self.view addSubview:progIn.view];
-//}
-
-//- (void)webViewDidFinishLoad:(UIWebView *)webView
-//{
-//    NSLog(@"Finished Loading");
-//    [progIn.view removeFromSuperview];
-//}
-
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     NSString *errorString = [[NSString alloc] initWithFormat:[error localizedDescription]];

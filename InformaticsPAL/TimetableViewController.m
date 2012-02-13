@@ -94,8 +94,20 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+-(void)showMessage
+{
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Timetable Validity" message:@"These are the classes for Spring 2012. An update will be released at the start of every term with new classes!" delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles: nil];
+    [message show];
+}
+
 - (void)viewDidLoad
 {
+    UIBarButtonItem *timetableDisclaimerButton = [[UIBarButtonItem alloc] initWithTitle:@"?" 
+                                                                        style:UIBarButtonItemStyleBordered  
+                                                                       target:self
+                                                                       action:@selector(showMessage)];
+    self.navigationItem.rightBarButtonItem = timetableDisclaimerButton;
+    [table setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]]];
     [self readPlist];
     [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:0.549 green:0.824 blue:0.925 alpha:1.000]];
     [super viewDidLoad];

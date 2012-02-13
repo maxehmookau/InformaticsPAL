@@ -10,7 +10,10 @@
 
 @interface TimetableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
+    IBOutlet UITableView *table;
     NSDictionary *plistData;
 }
+
+-(void)showMessage;
 
 @end

@@ -9,6 +9,7 @@
 #import "InformaticsPALAppDelegate.h"
 #import "ProfilesViewController.h"
 #import "TimetableViewController.h"
+#import "Reachability.h"
 
 @implementation InformaticsPALAppDelegate
 
@@ -22,17 +23,15 @@
     UITabBarController *tabBar = [[UITabBarController alloc] init];
     
     ProfilesViewController *profilesVC = [[ProfilesViewController alloc] init];
-    [profilesVC setTitle:@"Leaders"];
+    [profilesVC setTitle:@"PAL Leaders"];
     UINavigationController *profilesNC = [[UINavigationController alloc] initWithRootViewController:profilesVC];
     
     TimetableViewController *timetableVC = [[TimetableViewController alloc] init];
-    [timetableVC setTitle:@"Timetable"];
+    [timetableVC setTitle:@"PAL Timetable"];
     UINavigationController *timetableNC = [[UINavigationController alloc] initWithRootViewController:timetableVC];
     
     tabBar.viewControllers = [NSArray arrayWithObjects:timetableNC, profilesNC, nil];
     self.window.rootViewController = tabBar;
-    
-    //UIImage *image = [[UIImage alloc] initWithContentsOfFile:@"calendar.png"];
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
      (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
     [self.window makeKeyAndVisible];
@@ -51,18 +50,27 @@
 }
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
 {
-    NSString * token = [[[deviceToken description] 
-                         stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]] 
-                        stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSString *urlString = [[NSString alloc] initWithString:@"https://go.urbanairship.com/api/device_tokens/"];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[urlString stringByAppendingString:token]]];
-    [request setHTTPMethod:@"PUT"];
-    [[NSURLConnection connectionWithRequest:request delegate:self]start];
-    NSLog(@"%@", token);
+    //Reachability status should be good otherwise no attempt should be made
+    //to conncet to UA servers.
+    Reachability *reach = [Reachability reachabilityForInternetConnection];
+    NetworkStatus internetStatus = [reach currentReachabilityStatus];
+    if(internetStatus != NotReachable)
+    {
+        NSString * token = [[[deviceToken description] 
+                             stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]] 
+                            stringByReplacingOccurrencesOfString:@" " withString:@""];
+        NSString *urlString = [[NSString alloc] initWithString:@"https://go.urbanairship.com/api/device_tokens/"];
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[urlString stringByAppendingString:token]]];
+        [request setHTTPMethod:@"PUT"];
+        [[NSURLConnection connectionWithRequest:request delegate:self]start];
+        NSLog(@"%@", token);
+    }    
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
 {
+    //Connection MUST be authenticated with urban airship with NO persistance to avoid 
+    //confliction errors. 
     NSLog(@"Challenged!");
     NSURLCredential *credential = [[NSURLCredential alloc] initWithUser:@"a7HKkMOnTMCNBR-KYRVBKA" password:@"h8nUX9KcTMCBodgwaHndsQ" persistence:NSURLCredentialPersistenceNone];
     [[challenge sender] useCredential:credential forAuthenticationChallenge:challenge];

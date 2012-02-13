@@ -79,6 +79,7 @@
 
 - (void)viewDidLoad
 {
+    [table setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]]];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

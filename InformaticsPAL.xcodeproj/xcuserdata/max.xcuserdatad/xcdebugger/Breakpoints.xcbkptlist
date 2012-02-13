@@ -9,13 +9,13 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InformaticsPAL/InformaticsPALAppDelegate.m"
-         timestampString = "350579338.093107"
+         timestampString = "350594728.605948"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "44"
-         endingLineNumber = "44"
-         landmarkName = "-application:didFailToRegisterForRemoteNotificationsWithError:"
-         landmarkType = "5">
+         startingLineNumber = "45"
+         endingLineNumber = "45"
+         landmarkName = "@implementation InformaticsPALAppDelegate"
+         landmarkType = "3">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

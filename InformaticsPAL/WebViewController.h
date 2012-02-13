@@ -18,8 +18,6 @@
 }
 
 -(void)setURL:(NSString *)address;
--(void)showActionSheet;
--(void)presentTweeter;
 
 @property (retain, nonatomic) UIWebView *webView;
 @end

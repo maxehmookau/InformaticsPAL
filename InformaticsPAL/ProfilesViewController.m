@@ -56,7 +56,9 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:SimpleTableIdentifier];    
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     cell.textLabel.text = [[plistData objectForKey:@"Names"]objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[[plistData objectForKey:@"PictureNames"] objectAtIndex:indexPath.row]];
+    NSString *imageName = [[NSString alloc] initWithFormat:@"%@%@.png",[[cell.textLabel.text componentsSeparatedByString:@" "]objectAtIndex:0] , [[[cell.textLabel.text componentsSeparatedByString:@" "]objectAtIndex:1]substringToIndex:1]];
+    [imagePaths addObject:imageName];
+    cell.imageView.image = [UIImage imageNamed:imageName];
     return cell;
 }
 
@@ -70,7 +72,8 @@
     //Generate dictionary with information
     NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
     [data setValue:[[plistData objectForKey:@"Names"]objectAtIndex:indexPath.row] forKey:@"Name"];
-    [data setValue:[UIImage imageNamed:[[plistData objectForKey:@"PictureNames"]objectAtIndex:indexPath.row]] forKey:@"Image"];
+    
+    [data setValue:[UIImage imageNamed:[imagePaths objectAtIndex:indexPath.row]] forKey:@"Image"];
     [data setValue:[[plistData objectForKey:@"Bios"]objectAtIndex:indexPath.row] forKey:@"Bio"];
     DetailedProfileViewController *detailVC = [[DetailedProfileViewController alloc] initwithDataDictionary:data];
     [self.navigationController pushViewController:detailVC animated:YES];
@@ -81,6 +84,8 @@
 
 - (void)viewDidLoad
 {
+    imagePaths = [[NSMutableArray alloc] init];
+    [table setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]]];
     [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:0.549 green:0.824 blue:0.925 alpha:1.000]];
     [self readPlist];
     [super viewDidLoad];

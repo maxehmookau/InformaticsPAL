@@ -11,6 +11,7 @@
 @interface DetailedProfileViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     NSDictionary *dataDictionary;
+    IBOutlet UITableView *table;
 }
 
 -(id)initwithDataDictionary:(NSDictionary *)data;

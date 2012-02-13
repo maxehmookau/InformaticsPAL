@@ -11,6 +11,8 @@
 @interface ProfilesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     NSDictionary *plistData;
+    IBOutlet UITableView *table;
+    NSMutableArray *imagePaths;
 }
 
 -(void)readPlist;

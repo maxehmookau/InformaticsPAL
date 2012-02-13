@@ -12,6 +12,7 @@
 {
     NSDictionary *dataDictionary;
     NSString *courseName;
+    IBOutlet UITableView *table;
 }
 
 -(id)initWithDataDictionary:(NSDictionary *)data title:(NSString *)title;
