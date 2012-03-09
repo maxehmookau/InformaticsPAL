@@ -51,6 +51,11 @@
 		505CE28E14A0B28200AC1D50 /* Courses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 505CE28D14A0B28200AC1D50 /* Courses.plist */; };
 		506EB4A414E45BC9000E0A5D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506EB4A314E45BC9000E0A5D /* WebViewController.m */; };
 		506EB4A714E45BE1000E0A5D /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506EB4A614E45BE1000E0A5D /* WebViewController.xib */; };
+		5072299B14F6AB6800EC640E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5072299914F6AB6800EC640E /* SettingsViewController.m */; };
+		5072299C14F6AB6800EC640E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5072299A14F6AB6800EC640E /* SettingsViewController.xib */; };
+		5072299F14F6AC0A00EC640E /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072299D14F6AC0A00EC640E /* gear.png */; };
+		507229A014F6AC0A00EC640E /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5072299E14F6AC0A00EC640E /* gear@2x.png */; };
+		507229A214F6AFF700EC640E /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 507229A114F6AFF700EC640E /* Settings.plist */; };
 		50821F5414E5A12400336A1F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 50821F5314E5A12400336A1F /* Reachability.m */; };
 		50821F5514E5A14A00336A1F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50821F3A14E56CBE00336A1F /* SystemConfiguration.framework */; };
 		50F10C1314E92BF5001BFF55 /* SamR.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F10C1114E92BF5001BFF55 /* SamR.png */; };
@@ -85,6 +90,7 @@
 		50025A6B1492982C00758A19 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		50025A6C1492982C00758A19 /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
 		5008F04314E92450004A899A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		501E191714EAFDC000D5D61C /* InformaticsPAL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = InformaticsPAL.entitlements; sourceTree = "<group>"; };
 		5029B73E14E465C800D9345C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		5029B74014E465CB00D9345C /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		5029B74214E465CE00D9345C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -117,6 +123,12 @@
 		506EB4A214E45BC9000E0A5D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		506EB4A314E45BC9000E0A5D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		506EB4A614E45BE1000E0A5D /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		5072299814F6AB6800EC640E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		5072299914F6AB6800EC640E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		5072299A14F6AB6800EC640E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		5072299D14F6AC0A00EC640E /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		5072299E14F6AC0A00EC640E /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
+		507229A114F6AFF700EC640E /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		50821F3414E56C9900336A1F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		50821F3614E56CA900336A1F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		50821F3814E56CB000336A1F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -193,11 +205,13 @@
 		50025A411492960F00758A19 /* InformaticsPAL */ = {
 			isa = PBXGroup;
 			children = (
+				501E191714EAFDC000D5D61C /* InformaticsPAL.entitlements */,
 				506EB4A214E45BC9000E0A5D /* WebViewController.h */,
 				506EB4A614E45BE1000E0A5D /* WebViewController.xib */,
 				506EB4A314E45BC9000E0A5D /* WebViewController.m */,
 				505CE28B14A0B1BE00AC1D50 /* Timetable */,
 				504750911493F8A600DDE634 /* Profiles */,
+				5072299614F6AB4B00EC640E /* Settings */,
 				50025A4A1492960F00758A19 /* InformaticsPALAppDelegate.h */,
 				50025A4B1492960F00758A19 /* InformaticsPALAppDelegate.m */,
 				50025A421492960F00758A19 /* Supporting Files */,
@@ -231,6 +245,8 @@
 				50025A6C1492982C00758A19 /* calendar@2x.png */,
 				50025A671492981D00758A19 /* group.png */,
 				50025A681492981D00758A19 /* group@2x.png */,
+				5072299D14F6AC0A00EC640E /* gear.png */,
+				5072299E14F6AC0A00EC640E /* gear@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -292,6 +308,17 @@
 				503A8D5714E424EE009D3D18 /* SessionDetailViewController.xib */,
 			);
 			name = Timetable;
+			sourceTree = "<group>";
+		};
+		5072299614F6AB4B00EC640E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5072299814F6AB6800EC640E /* SettingsViewController.h */,
+				5072299914F6AB6800EC640E /* SettingsViewController.m */,
+				5072299A14F6AB6800EC640E /* SettingsViewController.xib */,
+				507229A114F6AFF700EC640E /* Settings.plist */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +412,10 @@
 				50F10C1D14E92C5E001BFF55 /* OllieG@2x.png in Resources */,
 				50F10C2014E92C83001BFF55 /* MaxH.png in Resources */,
 				50F10C2114E92C83001BFF55 /* MaxH@2x.png in Resources */,
+				5072299C14F6AB6800EC640E /* SettingsViewController.xib in Resources */,
+				5072299F14F6AC0A00EC640E /* gear.png in Resources */,
+				507229A014F6AC0A00EC640E /* gear@2x.png in Resources */,
+				507229A214F6AFF700EC640E /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +434,7 @@
 				503A8D5814E424EE009D3D18 /* SessionDetailViewController.m in Sources */,
 				506EB4A414E45BC9000E0A5D /* WebViewController.m in Sources */,
 				50821F5414E5A12400336A1F /* Reachability.m in Sources */,
+				5072299B14F6AB6800EC640E /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,12 +501,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Max Woolf (35C7AH5D5T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Max Woolf (35C7AH5D5T)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InformaticsPAL/InformaticsPAL-Prefix.pch";
 				INFOPLIST_FILE = "InformaticsPAL/InformaticsPAL-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "92E7DA7D-5C0B-465E-ACDC-CB5B58058626";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "92E7DA7D-5C0B-465E-ACDC-CB5B58058626";
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -483,13 +517,13 @@
 		50025A571492960F00758A19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Max Woolf (35C7AH5D5T)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Max Woolf";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InformaticsPAL/InformaticsPAL-Prefix.pch";
 				INFOPLIST_FILE = "InformaticsPAL/InformaticsPAL-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "92E7DA7D-5C0B-465E-ACDC-CB5B58058626";
+				PROVISIONING_PROFILE = "53BCE390-AF79-4F9B-8B91-A648584A4D0F";
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};

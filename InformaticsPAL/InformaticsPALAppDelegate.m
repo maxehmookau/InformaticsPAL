@@ -9,6 +9,7 @@
 #import "InformaticsPALAppDelegate.h"
 #import "ProfilesViewController.h"
 #import "TimetableViewController.h"
+#import "SettingsViewController.h"
 #import "Reachability.h"
 
 @implementation InformaticsPALAppDelegate
@@ -30,7 +31,11 @@
     [timetableVC setTitle:@"PAL Timetable"];
     UINavigationController *timetableNC = [[UINavigationController alloc] initWithRootViewController:timetableVC];
     
-    tabBar.viewControllers = [NSArray arrayWithObjects:timetableNC, profilesNC, nil];
+    SettingsViewController *settingsVC = [[SettingsViewController alloc] init];
+    [settingsVC setTitle:@"Settings"];
+    
+    
+    tabBar.viewControllers = [NSArray arrayWithObjects:timetableNC, profilesNC, settingsVC, nil];
     self.window.rootViewController = tabBar;
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
@@ -73,7 +78,7 @@
     //Connection MUST be authenticated with urban airship with NO persistance to avoid 
     //confliction errors. 
     NSLog(@"Challenged!");
-    NSURLCredential *credential = [[NSURLCredential alloc] initWithUser:@"a7HKkMOnTMCNBR-KYRVBKA" password:@"h8nUX9KcTMCBodgwaHndsQ" persistence:NSURLCredentialPersistenceNone];
+    NSURLCredential *credential = [[NSURLCredential alloc] initWithUser:@"CZzQCz2GRx2go_oF5Hp7xA" password:@"1aZKPsaFSnSEFFf8iPOI3w" persistence:NSURLCredentialPersistenceNone];
     [[challenge sender] useCredential:credential forAuthenticationChallenge:challenge];
 }
 

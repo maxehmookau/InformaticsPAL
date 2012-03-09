@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="878" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Settings" syncable="YES">
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="Settings" predicateString="FALSEPREDICATE"/>
+    <elements>
+        <element name="Settings" positionX="-2808" positionY="-1737" width="128" height="60"/>
+    </elements>
+</model>

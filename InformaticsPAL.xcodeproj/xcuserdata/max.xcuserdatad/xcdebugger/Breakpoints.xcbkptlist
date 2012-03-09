@@ -9,13 +9,27 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InformaticsPAL/InformaticsPALAppDelegate.m"
-         timestampString = "350835726.095947"
+         timestampString = "351710138.074786"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "46"
-         endingLineNumber = "46"
+         startingLineNumber = "51"
+         endingLineNumber = "51"
          landmarkName = "@implementation InformaticsPALAppDelegate"
          landmarkType = "3">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "InformaticsPAL/SettingsViewController.m"
+         timestampString = "351712397.63056"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "80"
+         endingLineNumber = "80"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
